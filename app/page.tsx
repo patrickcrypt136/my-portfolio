@@ -38,7 +38,7 @@ export default function Home() {
           <a href="#skills" className="hover:text-white transition-colors">Skills</a>
           <a href="#projects" className="hover:text-white transition-colors">Projects</a>
           <a href="#contact" className="hover:text-white transition-colors">Contact</a>
-          <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
+          <a href="https://my-blog-lemon-delta.vercel.app" target="_blank" className="hover:text-white transition-colors">Blog</a>
         </div>
       </nav>
 
