@@ -19,6 +19,60 @@
   }
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-1 {
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-2 {
+  animation: fadeInUp 0.5s ease 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-3 {
+  animation: fadeInUp 0.5s ease 0.4s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-4 {
+  animation: fadeInUp 0.5s ease 0.6s forwards;
+  opacity: 0;
+}.animate-fade-in-1,
+.animate-fade-in-2,
+.animate-fade-in-3,
+.animate-fade-in-4 {
+  animation-name: fadeInUp;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+.animate-fade-in-1 { animation-delay: 0s; }
+.animate-fade-in-2 { animation-delay: 0.2s; }
+.animate-fade-in-3 { animation-delay: 0.4s; }
+.animate-fade-in-4 { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 body {
   background: var(--background);
   color: var(--foreground);

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ContactForm from "./components/ContactForm";
+import Hero from "./components/Hero";
 const skills = [
   { name: "JavaScript", level: "Advanced" },
   { name: "React", level: "Advanced" },
@@ -41,25 +42,7 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Hero */}
-      <section className="max-w-5xl mx-auto px-6 py-28">
-        <p className="text-blue-400 text-sm font-medium mb-4 tracking-widest uppercase">Available for work</p>
-        <h1 className="text-5xl font-bold tracking-tight mb-6 leading-tight">
-          Hi, I'm Patrick Kelvin <br />
-          <span className="text-gray-400">Full Stack Developer</span>
-        </h1>
-        <p className="text-gray-400 text-lg max-w-xl leading-relaxed mb-10">
-          I build fast, clean, and user-friendly web applications. Focused on JavaScript, React, and Next.js — currently exploring Web3.
-        </p>
-        <div className="flex gap-4">
-          <a href="#projects" className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg text-sm font-medium transition-colors">
-            View Projects
-          </a>
-          <a href="#contact" className="border border-gray-700 hover:border-gray-500 text-gray-300 px-6 py-3 rounded-lg text-sm font-medium transition-colors">
-            Contact Me
-          </a>
-        </div>
-      </section>
+      <Hero />
 
       {/* Skills */}
       <section id="skills" className="max-w-5xl mx-auto px-6 py-20 border-t border-gray-800">
