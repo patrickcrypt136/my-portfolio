@@ -27,6 +27,13 @@ const projects = [
     liveUrl: "",
     githubUrl: "",
   },
+  {
+  title: "Guestbook",
+  description: "A full stack guestbook app where anyone can leave a message. Built with Next.js and Supabase.",
+  tags: ["Next.js", "Supabase", "TypeScript", "Tailwind CSS"],
+  liveUrl: "https://guestbook-azure.vercel.app",
+  githubUrl: "https://github.com/patrickcrypt136/guestbook",
+},
 ];
 export default function Home() {
   return (
