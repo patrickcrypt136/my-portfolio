@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import ContactForm from "./components/ContactForm";
 const skills = [
   { name: "JavaScript", level: "Advanced" },
   { name: "React", level: "Advanced" },
@@ -27,7 +27,6 @@ const projects = [
     githubUrl: "",
   },
 ];
-
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-950 text-gray-100">
@@ -112,27 +111,30 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section id="contact" className="max-w-5xl mx-auto px-6 py-20 border-t border-gray-800">
-        <h2 className="text-2xl font-bold mb-2">Contact</h2>
-        <p className="text-gray-400 mb-10">Let's work together or just say hi</p>
-        <div className="bg-gray-900 border border-gray-800 rounded-xl p-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
-          <div>
-            <p className="text-gray-300 text-sm mb-1">Reach me at</p>
-            <a href="mailto:patrickcrypt136@gmail.com" className="text-blue-400 hover:text-blue-300 transition-colors">
-              patrickcrypt136@gmail.com
-            </a>
-          </div>
-          <div className="flex gap-4">
-            <a href="https://github.com/patrickcrypt136" target="_blank" className="border border-gray-700 hover:border-gray-500 text-gray-300 px-5 py-2 rounded-lg text-sm transition-colors">
-              GitHub
-            </a>
-            <a href="https://x.com/patrickcrypt136" target="_blank" className="border border-gray-700 hover:border-gray-500 text-gray-300 px-5 py-2 rounded-lg text-sm transition-colors">
-              X (Twitter)
-            </a>
-          </div>
-        </div>
-      </section>
+<section id="contact" className="max-w-5xl mx-auto px-6 py-20 border-t border-gray-800">
+  <h2 className="text-2xl font-bold mb-2">Contact</h2>
+  <p className="text-gray-400 mb-10">Let's work together or just say hi</p>
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+    {/* Left */}
+    <div className="flex flex-col gap-4">
+      <p className="text-gray-300 text-sm">Reach me directly at</p>
+      <a href="mailto:patrickcrypt136@gmail.com" className="text-blue-400 hover:text-blue-300 transition-colors">
+        patrickcrypt136@gmail.com
+      </a>
+      <div className="flex gap-4 mt-2">
+        <a href="https://github.com/patrickcrypt136" target="_blank" className="border border-gray-700 hover:border-gray-500 text-gray-300 px-5 py-2 rounded-lg text-sm transition-colors">
+          GitHub
+        </a>
+        <a href="https://x.com/patrickcrypt136" target="_blank" className="border border-gray-700 hover:border-gray-500 text-gray-300 px-5 py-2 rounded-lg text-sm transition-colors">
+          X (Twitter)
+        </a>
+      </div>
+    </div>
 
+    {/* Right - Form */}
+    <ContactForm />
+  </div>
+</section>
       {/* Footer */}
       <footer className="max-w-5xl mx-auto px-6 py-8 border-t border-gray-800 text-center text-gray-600 text-sm">
         Built by Patrick Kelvin with Next.js & Tailwind CSS
