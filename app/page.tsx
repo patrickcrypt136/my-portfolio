@@ -34,6 +34,13 @@ const projects = [
   liveUrl: "https://guestbook-azure.vercel.app",
   githubUrl: "https://github.com/patrickcrypt136/guestbook",
 },
+{
+  title: "Pearl & Poise",
+  description: "A fashion e-commerce store with product filtering and WhatsApp ordering. Built for a real client.",
+  tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+  liveUrl: "https://pearl-and-poise.vercel.app",
+  githubUrl: "https://github.com/patrickcrypt136/pearl-and-poise",
+},
 ];
 export default function Home() {
   return (
